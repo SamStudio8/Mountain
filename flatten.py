@@ -452,7 +452,7 @@ if __name__ == '__main__':
     parser.add_argument("--oligo_flank", type=int, default=2)
     parser.add_argument("-a", "--aligned", metavar="",
         help=("FASTA folder or Library"))
-    parser.add_argument('--blocks', type=int, metavar=""
+    parser.add_argument('--blocks', type=int, metavar="",
         help=("Output results in blocks, with n sequences per block"))
     #TODO Flag to output SNPs as N regardless of what was read
     Flattener().execute(parser.parse_args())
